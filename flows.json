@@ -1,0 +1,902 @@
+[
+    {
+        "id": "a14d4aa01cd2c222",
+        "type": "tab",
+        "label": "ESP32-CAM Full Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "885f95c9ec762dcc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "69387dfc02025c67",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "702fa256b6d31061",
+        "type": "ui_tab",
+        "name": "Main",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e90c364d443eec10",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#9e0000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#990000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#9e0000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#9e0000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ea0000",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#9e0000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f353923519195bc6",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "702fa256b6d31061",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56b7feb404b1f30f",
+        "type": "ui_tab",
+        "name": "Sensor data",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2df925e6e6f33327",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "56b7feb404b1f30f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6daeddda024af020",
+        "type": "ui_group",
+        "name": "đkhien",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "949797c9f486b233",
+        "type": "ui_tab",
+        "name": "Nguyễn Đức Trung B22DCCN871",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0b9bd744c6099926",
+        "type": "ui_group",
+        "name": "main",
+        "tab": "949797c9f486b233",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui_tab_cam",
+        "type": "ui_tab",
+        "name": "Thùng rác tự động nhận diện & phân loại rác thải",
+        "icon": "camera",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_cam",
+        "type": "ui_group",
+        "name": "Camera",
+        "tab": "ui_tab_cam",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "70b0fffd929d59e0",
+        "type": "ui_group",
+        "name": "Thùng rác",
+        "tab": "ui_tab_cam",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b8a2b2519e01114",
+        "type": "ui_group",
+        "name": "Group",
+        "tab": "702fa256b6d31061",
+        "order": null,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b0ec8553d1949d1b",
+        "type": "firebase admin",
+        "name": "iot-phanloairac"
+    },
+    {
+        "id": "8c828f67228cd719",
+        "type": "sqlitedb",
+        "db": "/Users/macbook/db_nodered/waste_database.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "t1_dashboard_main",
+        "type": "ui_tab",
+        "name": "Điều Khiển",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "g1_servo_control",
+        "type": "ui_group",
+        "name": "Điều Khiển Servo",
+        "tab": "t1_dashboard_main",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6142c3fa40ddb7b4",
+        "type": "ui_button",
+        "z": "a14d4aa01cd2c222",
+        "name": "Chụp ảnh thủ công",
+        "group": "ui_group_cam",
+        "order": 2,
+        "width": "10",
+        "height": 1,
+        "passthru": false,
+        "label": "📸 CHỤP ẢNH",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "capture-btn",
+        "icon": "",
+        "payload": "capture",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "c854dc5854e811cd"
+            ]
+        ]
+    },
+    {
+        "id": "c854dc5854e811cd",
+        "type": "http request",
+        "z": "a14d4aa01cd2c222",
+        "name": "Gọi ESP32-CAM chụp ảnh",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://10.245.61.32/capture",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "ca3e666b5ab01222"
+            ]
+        ]
+    },
+    {
+        "id": "ca3e666b5ab01222",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "Chuyển ảnh sang base64",
+        "func": "msg.image_buffer = msg.payload;\nmsg.image_b64 = msg.payload.toString('base64');\nmsg.payload = \"data:image/jpeg;base64,\" + msg.image_b64;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "3497296f4a6ec4e3",
+                "8883acfb5fd7ceb0"
+            ]
+        ]
+    },
+    {
+        "id": "3497296f4a6ec4e3",
+        "type": "ui_template",
+        "z": "a14d4aa01cd2c222",
+        "group": "ui_group_cam",
+        "name": "Hiển thị ảnh",
+        "order": 4,
+        "width": "7",
+        "height": "7",
+        "format": "<div style=\"text-align:center\">\n  <img src=\"{{msg.payload}}\" style=\"max-width:200%; border-radius:10px; box-shadow:0 0 10px #aaa; display:flex; justify-content:center\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 770,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "542e4d25ba71cb0e",
+        "type": "http in",
+        "z": "a14d4aa01cd2c222",
+        "name": "ESP32-CAM POST /upload (LM393)",
+        "url": "/upload",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "7b6fc31f552e43c5",
+                "c854dc5854e811cd"
+            ]
+        ]
+    },
+    {
+        "id": "8883acfb5fd7ceb0",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "Gửi ảnh sang model AI (ngrok)",
+        "func": "// ⚠️ THAY URL bằng link ngrok public của Colab\nmsg.headers = {\"Content-Type\": \"application/json\"};\nmsg.payload = { image: msg.image_b64 };\nmsg.url = \"https://unomnipotent-hisako-granularly.ngrok-free.dev/predict\"; // thay link mỗi khi restart Colab\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "af9cb9f678f4a07b"
+            ]
+        ]
+    },
+    {
+        "id": "af9cb9f678f4a07b",
+        "type": "http request",
+        "z": "a14d4aa01cd2c222",
+        "name": "POST đến model AI (Colab/ngrok)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://unomnipotent-hisako-granularly.ngrok-free.dev/predict",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 960,
+        "y": 140,
+        "wires": [
+            [
+                "d475ce61a050783d"
+            ]
+        ]
+    },
+    {
+        "id": "d475ce61a050783d",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "lấy kết quả hiển thị",
+        "func": "// 1. Lưu kết quả AI gốc vào một biến mới (msg.ai_result)\n//    để node servo có thể sử dụng\nmsg.ai_result = msg.payload;\n\n// 2. Tạo chuỗi hiển thị cho UI (giống như cũ)\nif (msg.payload.error) {\n    msg.payload = `❌ Lỗi: ${msg.payload.error}`;\n} else if (msg.payload.label) {\n    let lbl = msg.payload.label.toUpperCase();\n    let acc = (msg.payload.confidence * 100).toFixed(1);\n    msg.payload = `📦 Kết quả: ${lbl} \\n Độ chính xác:  (${acc}%)`;\n} else {\n    msg.payload = \"⚠️ Không nhận được phản hồi hợp lệ từ model.\";\n    msg.ai_result = { error: \"Invalid response\" };\n}\n\n// msg bây giờ chứa:\n// msg.payload = \"📦 Kết quả: PAPER (95.0%)\" (cho UI)\n// msg.ai_result = { \"label\": \"paper\", ... } (cho Servo)\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 340,
+        "wires": [
+            [
+                "7592f7e1018ca5b9",
+                "2ba994718b67504d",
+                "263f6175e783b89c"
+            ]
+        ]
+    },
+    {
+        "id": "7592f7e1018ca5b9",
+        "type": "ui_text",
+        "z": "a14d4aa01cd2c222",
+        "group": "ui_group_cam",
+        "order": 5,
+        "width": "10",
+        "height": "1",
+        "name": "Kết quả AI",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#c22e2e",
+        "x": 1270,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7b6fc31f552e43c5",
+        "type": "http response",
+        "z": "a14d4aa01cd2c222",
+        "name": "Trả 200 OK",
+        "statusCode": "200",
+        "headers": {},
+        "x": 410,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2ba994718b67504d",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "msg to servo",
+        "func": "// Lấy label gốc từ AI (đã được lưu trong msg.ai_result)\nlet label;\nif (msg.ai_result && msg.ai_result.label) {\n    label = msg.ai_result.label;\n} else {\n    // Nếu không có kết quả AI, dừng lại\n    return null; \n}\n\nlabel = label.toLowerCase();\n\nlet groupCW = [\"paper\", \"cardboard\", \"trash\"];\nlet groupCCW = [\"metal\", \"plastic\", \"glass\"];\n\nlet servoMode = \"STOP\";\nif (groupCW.includes(label)) servoMode = \"CW\";\nelse if (groupCCW.includes(label)) servoMode = \"CCW\";\n\n// Gửi cho HTTP Request\nmsg.servoMode = servoMode;\nmsg.method = \"GET\";\nmsg.url = \"http://10.245.61.246/servo?mode=\" + servoMode;   \n// <— ĐỔI IP mỗi lần chạy TẠI ĐÂY\n// ip của lm393\n\n// Tạo thông báo UI\nif (servoMode === \"CW\") msg.payload_servo = \"↻ Rác đã được đổ vào khay tái chế Sơ sợi (giấy, bìa)\";\nelse if (servoMode === \"CCW\") msg.payload_servo = \"↺ Rác đã được đổ vào khay tái chế Cơ học/Nhiệt (nhựa, kim loại, thủy tinh)\";\nelse msg.payload_servo = \"⏹ Servo DỪNG\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 300,
+        "wires": [
+            [
+                "80b5b60834d15f40",
+                "897a99ad55e380ac"
+            ]
+        ]
+    },
+    {
+        "id": "80b5b60834d15f40",
+        "type": "http request",
+        "z": "a14d4aa01cd2c222",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1570,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "897a99ad55e380ac",
+        "type": "ui_text",
+        "z": "a14d4aa01cd2c222",
+        "group": "70b0fffd929d59e0",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Trạng thái Servo",
+        "label": "",
+        "format": "{{msg.payload_servo}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b020c8e1cd170ea4",
+        "type": "ui_switch",
+        "z": "a14d4aa01cd2c222",
+        "name": "Mở nắp thùng rác",
+        "label": "Mở nắp thùng rác",
+        "tooltip": "",
+        "group": "70b0fffd929d59e0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "open",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "red",
+        "offvalue": "close",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "blue",
+        "animate": true,
+        "className": "switch-btn",
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "18644f334de0af63"
+            ]
+        ]
+    },
+    {
+        "id": "ef6f2b43cbb994ed",
+        "type": "ui_template",
+        "z": "a14d4aa01cd2c222",
+        "group": "ui_group_cam",
+        "name": "capture-btn css",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "format": "<style>\n    /* XÓA PADDING/MARGIN MẶC ĐỊNH CỦA DASHBOARD GROUP */\n    .md-card .nr-dashboard-cardpanel {\n    padding: 0 !important;\n    margin: 0 !important;\n    }\n    \n    /* FIX CĂN LỀ BÊN TRONG WIDGET */\n    .nr-dashboard-card {\n    margin-left: 0 !important;\n    padding-left: 0 !important;\n    }\n    .capture-btn {\n    display: flex !important;\n    justify-content: center !important;\n    width: 100% !important; /* QUAN TRỌNG */\n    }\n    \n    .capture-btn .md-button {\n        width: 220px !important;\n        background: linear-gradient(45deg, #1e88e5, #42a5f5) !important;\n        border-radius: 12px !important;\n        color: white !important;\n        /* font-size: 20px !important;\n        font-weight: 600 !important; */\n        padding: 14px 20px !important;\n        text-transform: none !important;\n        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;\n        display: flex !important;\n        justify-content: center !important;\n        align-items:center;\n    }\n\n    .capture-btn .md-button:hover {\n        transform: scale(1.05);\n        transition: 0.2s;\n    }\n</style>\n\n<div id=\"capture-btn\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "214805fa837a6483",
+        "type": "ui_template",
+        "z": "a14d4aa01cd2c222",
+        "group": "ui_group_cam",
+        "name": "camera title",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"\n  text-align:center;\n  font-size: 28px;\n  font-weight: 700;\n  margin-top: 10px;\n  margin-bottom: 20px;\n  color: #060771;\n  text-shadow: 0px 2px 4px rgba(0,0,0,0.1);\n\">\n    📷 Camera\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03d61efa13946163",
+        "type": "ui_template",
+        "z": "a14d4aa01cd2c222",
+        "group": "70b0fffd929d59e0",
+        "name": "thùng rác title",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"\n  text-align:center;\n  font-size: 28px;\n  font-weight: 700;\n  margin-top: 10px;\n  margin-bottom: 20px;\n  color: #BF1A1A;\n  text-shadow: 0px 2px 4px rgba(0,0,0,0.1);\n\">\n    🗑️ Thùng rác\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea123044701d86a6",
+        "type": "ui_template",
+        "z": "a14d4aa01cd2c222",
+        "group": "8b8a2b2519e01114",
+        "name": "switch-btn",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .switch-btn {\n        color:black !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b81ca7fe2daf527",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "INSERT DB và tải ảnh về máy",
+        "func": "// 1. Lấy kết quả AI\nif (!msg.ai_result || !msg.ai_result.label) {\n    node.warn(\"Không có nhãn AI, không thể lưu file/DB.\");\n    return null; // Dừng luồng\n}\nlet label = String(msg.ai_result.label).toLowerCase().trim();\n\n// 2. Định nghĩa các nhãn hợp lệ (phải khớp với tên bảng SQL)\nconst valid_labels = [\"paper\", \"cardboard\", \"metal\", \"plastic\", \"glass\", \"trash\"];\n\n// 3. Kiểm tra nhãn\nif (!valid_labels.includes(label)) {\n    node.warn(\"Nhãn không hợp lệ, không lưu vào DB: \" + label);\n    return null; // Dừng luồng\n}\n\n// 4. Kiểm tra buffer ảnh\nif (!msg.image_buffer) {\n    node.warn(\"Không tìm thấy msg.image_buffer, không thể lưu ảnh.\");\n    return null;\n}\n\n// 5. Chuẩn bị thông tin\nlet ts = new Date();\nlet db_timestamp = ts.toISOString(); // \"2025-11-15T10:14:00.000Z\"\nlet file_timestamp = ts.toISOString().replace(/:/g, '-').replace(/\\..+/, ''); // \"2025-11-15T10-14-00\"\n\n// Đây là đường dẫn trên máy tính CHẠY NODE-RED\nlet base_path = \"/Users/macbook/db_nodered\";\n\nlet file_path = `${base_path}/${label}/${file_timestamp}_${label}.jpg`;\n\n// 6. Chuẩn bị để ghi file\n// Node 'file' sẽ dùng msg.filename và msg.payload\nmsg.filename = String(file_path).trim();\nmsg.payload = msg.image_buffer; // Đặt buffer ảnh làm payload\n\nnode.log(`[DEBUG] Đã gán filename: ${msg.filename}`);\n// 7. Chuẩn bị để ghi DB (lưu vào biến tạm để node sau dùng)\nmsg.db_topic = `INSERT INTO ${label} (timestamp, filepath) VALUES (?, ?)`;\nmsg.db_params = [db_timestamp, file_path];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "ea220a5c6bd78974",
+                "3a9e4a8d24814603"
+            ]
+        ]
+    },
+    {
+        "id": "3a9e4a8d24814603",
+        "type": "file",
+        "z": "a14d4aa01cd2c222",
+        "name": "tạo file ở local",
+        "filename": "",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1440,
+        "y": 560,
+        "wires": [
+            [
+                "acbe1b0d90ed6f77"
+            ]
+        ]
+    },
+    {
+        "id": "acbe1b0d90ed6f77",
+        "type": "function",
+        "z": "a14d4aa01cd2c222",
+        "name": "cbi value",
+        "func": "// Khôi phục lại các tham số DB đã chuẩn bị ở node \"3. Chuẩn bị File & DB\"\nmsg.topic = msg.db_topic;\nmsg.payload = msg.db_params;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 460,
+        "wires": [
+            [
+                "6ac82d2e13afeb10"
+            ]
+        ]
+    },
+    {
+        "id": "6ac82d2e13afeb10",
+        "type": "sqlite",
+        "z": "a14d4aa01cd2c222",
+        "mydb": "8c828f67228cd719",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "lưu",
+        "x": 1730,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d28af0beccc51f6",
+        "type": "inject",
+        "z": "a14d4aa01cd2c222",
+        "name": "TẠO 6 BẢNG (NHẤN 1 LẦN)",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE IF NOT EXISTS paper (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);CREATE TABLE IF NOT EXISTS cardboard (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);CREATE TABLE IF NOT EXISTS metal (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);CREATE TABLE IF NOT EXISTS plastic (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);CREATE TABLE IF NOT EXISTS glass (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);CREATE TABLE IF NOT EXISTS trash (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT, filepath TEXT);",
+        "x": 900,
+        "y": 600,
+        "wires": [
+            [
+                "f1107838de176fe7"
+            ]
+        ]
+    },
+    {
+        "id": "f1107838de176fe7",
+        "type": "sqlite",
+        "z": "a14d4aa01cd2c222",
+        "mydb": "8c828f67228cd719",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "DB (Tạo Bảng)",
+        "x": 1000,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18644f334de0af63",
+        "type": "template",
+        "z": "a14d4aa01cd2c222",
+        "name": "http to servo",
+        "field": "url",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "http://10.245.61.246/servo?mode={{payload}}\n{{!-- đổi mỗi lần chạy --}}\n{{!-- ip của lm393 --}}",
+        "output": "str",
+        "x": 430,
+        "y": 500,
+        "wires": [
+            [
+                "d149329bc6916205"
+            ]
+        ]
+    },
+    {
+        "id": "d149329bc6916205",
+        "type": "http request",
+        "z": "a14d4aa01cd2c222",
+        "name": "gửi lệnh servo",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 680,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "263f6175e783b89c",
+        "type": "debug",
+        "z": "a14d4aa01cd2c222",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ea220a5c6bd78974",
+        "type": "debug",
+        "z": "a14d4aa01cd2c222",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "0580205b07e93680",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-cloud-firestore": "3.2.0",
+            "node-red-node-sqlite": "1.1.1"
+        }
+    }
+]
