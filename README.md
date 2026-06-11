@@ -85,3 +85,12 @@ The system operates on a **Distributed Architecture** combining Edge devices and
 │   └── flows.json                # Node-RED flows configuration
 └── docs/
     └── report.pdf                # Full project report (Vietnamese)
+```
+
+---
+
+## Video Demo
+
+https://github.com/user-attachments/assets/81c5e033-d1b4-419d-bbc3-ec3ff15b21d5
+
+
